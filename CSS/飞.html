@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>飞舟博客 —— 关注Web前端发展，分享办公软件使用心得。</title>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+		<style type="text/css">
+			
+			header {
+				width: 100%;
+				height: 100px;
+				background-color: darkturquoise;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+			}
+			
+			footer {
+				width: 100%;
+				height: 50px;
+				background-color: gray;
+				border-top: 5px solid darkgreen;
+				line-height: 50px;
+				font-size: 12px;
+				color: #EEEEEE;
+			}
+			
+			.font3 {
+				font-size: 45px;
+			}
+			
+			.font4 {
+				margin-left: -10px;
+			}
+			
+			.font1:hover .font3 .font4 {
+				margin-left: 10px;
+			}
+			
+			.font1:hover .font2 {
+				opacity: 0.5;
+			}
+			
+			.div0 {
+				width: 100%;
+				height: 50px;
+				background-color: darkgray;
+				display: flex;
+				justify-content: flex-start;
+			}
+			
+			.div1 {
+				width: 70%;
+				height: 2840px;
+				margin: auto;
+			}
+			
+			.div2 {
+				height: 50px;
+				width: 80px;
+				background-color: darkturquoise;
+				opacity: 0.8;
+				margin-left: 226px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				font-size: 12px;
+			}
+			
+			.div8 {
+				height: 50px;
+				width: 80px;
+				background-color: darkturquoise;
+				opacity: 0.8;
+				margin-left: 1px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+				font-size: 12px;
+				    position: relative;
+    z-index: 20
+			}
+			
+			.div3,
+			.div4,
+			.div5,
+			.div6,
+			.div7 {
+				height: 50px;
+				width: 80px;
+				font-size: 12px;
+				margin-left: 1px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+			}
+			.div3:hover,.div4:hover,.div5:hover,.div6:hover,
+			.div7:hover {
+				background-color: #00CED1;
+			}
+			
+			.div9 {
+				background-color: bisque;
+				width: 100%;
+				height: 40px;
+				text-align: left;
+				line-height: 40px;
+				font-size: 12px;
+			}
+			
+			.div10,
+			.div11,
+			.div12,
+			.div13,
+			.div14 {
+				height: 40px;
+				width: 80px;
+				background-color: #00CED1;
+				display: none;
+			}
+			
+			.div15,
+			.div16,
+			.div17,
+			.div18,
+			.div19 {
+				height: 40px;
+				width: 80px;
+				background-color: #00CED1;
+				display: none;
+			}
+			
+			.div8:hover .div15 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.4s;
+				position: relative;
+				z-index: 10;
+			}
+			
+			.div8:hover .div16 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.3s;
+				position: relative;
+				z-index: 10;
+			}
+			
+			.div8:hover .div17 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.2s;
+				position: relative;
+				z-index: 10;
+			}
+			
+			.div8:hover .div18 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.1s;
+				position: relative;
+				z-index: 10;
+			}
+			
+			.div8:hover .div19 {
+				display: block;
+				animation: d10 1s linear;
+				position: fixed;
+				z-index: 20;
+			}
+			
+			.div7:hover .div10 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.4s;
+				position: relative;
+				z-index: 20;
+			}
+			
+			.div7:hover .div11 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.3s;
+				position: relative;
+				z-index: 20;
+			}
+			
+			.div7:hover .div12 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.2s;
+				position: relative;
+				z-index: 20;
+			}
+			
+			.div7:hover .div13 {
+				display: block;
+				animation: d10 1s linear;
+				animation-delay: 0.1s;
+				position: relative;
+				z-index: 20;
+			}
+			
+			.div7:hover .div14 {
+				display: block;
+				animation: d10 1s linear;
+				position: relative;
+				z-index: 20;
+			}
+			
+			@keyframes d10 {
+				0%,
+				100% {}
+				50% {
+					transform: rotateY(180deg);
+				}
+			}
+			
+			.div20 {
+				width: 65%;
+				height: 2800px;
+				float: left;
+			}
+			
+			.div21 {
+				width: 35%;
+				height: 2800px;
+				float: left;
+			}
+			
+			.div22 {
+				width: 98%;
+				height: 350px;
+				margin-top: 5px;
+			}
+			
+			.div23 {
+				width: 150px;
+				height: 350px;
+				display: flex;
+				flex-direction: column;
+				float: left;
+			}
+			
+			.div24,
+			.div25,
+			.div26,
+			.div27 {
+				margin-top: 5px;
+				width: 150px;
+				height: 80px;
+				background-color: white;
+			}
+			.div24:active,
+			.div25:active,
+			.div26:active,
+			.div27:active {
+				
+				background-color: #00CED1;
+			}
+			
+			:target .div28,
+			:target .div29,
+			:target .div30,
+			:target .div31 {
+				display: block;
+				animation: d28 2s linear infinite;
+				
+			}
+			@keyframes d28{
+				0%,100%{
+					transform: scale(1);
+				}
+				50%{
+					transform: scale(1.2);
+				}
+				
+				
+			}
+			@keyframes d29{
+				0%,100%{
+					transform: translateX(30px);
+				}
+				50%{
+					transform:translateX(-30px);
+				}
+				
+				
+			}
+			.div28{
+				animation: d29 2s linear infinite;
+				
+			}
+			.div29{
+				display: none;
+				/*animation: d28 2s linear infinite;*/
+				animation: d29 2s linear infinite;
+				
+			}
+			.div30{
+				display: none;
+				/*animation: d28 2s linear infinite;*/
+				
+			}
+			.div31 {
+				display: none;
+				/*animation: d28 2s linear infinite;*/
+			}
+			
+			.div32 {
+				width: 98%;
+				height: 230px;
+				background-color: white;
+				margin-top: 5px;
+			}
+			
+			.div33 {
+				background-color: red;
+				float: left;
+			}
+			
+			.div34 {
+				color: green;
+				float: left;
+				margin-left: 5px;
+				margin-top: 2px;
+			}
+			
+			.div33:hover {
+				background-color: darkred;
+			}
+			
+			.div34:hover {
+				color: greenyellow;
+			}
+			
+			.i {
+				width: 55px;
+				height: 50px;
+				background: url(img/blogs/navSearch.jpg);
+				margin-left: 28.6%;
+			}
+			
+			.i:hover {
+				background: url(img/blogs/navSearch2.jpg);
+			}
+			
+			.ii {
+				height: 38px;
+				width: 280px;
+				margin-top: 50px;
+				margin-left: -227px;
+				border: 1px solid gray;
+				background-color: white;
+				backface-visibility: hidden;
+				display: none;
+			}
+			
+			:target .i .ii {
+				display: block;
+			}
+			
+			.i:active .ii {
+				display: block;
+			}
+			
+			.div35 {
+				width: 200px;
+				height: 130px;
+				overflow: hidden;
+				position: absolute;
+				margin-top: 40px;
+				margin-left: 20px;
+			}
+			
+			.div36 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs/timthumb.jpg);
+			}
+			
+			.div36:hover {
+				animation: d36 1s linear;
+			}
+			
+			@keyframes d36 {
+				0% {}
+				100% {
+					transform: scale(1.2);
+				}
+			}
+			
+			.div37 {
+				font-size: 12px;
+				width: 350px;
+				height: 300px;
+				margin-left: 250px;
+				margin-top: 40px;
+			}
+			
+			.div38 {
+				font-size: 10px;
+			}
+			
+			.div39 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs/timthumb11.jpg);
+			}
+			
+			.div39:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div40 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs/timthumb22.jpg);
+			}
+			
+			.div40:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div41 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blog/list1.jpg);
+			}
+			
+			.div41:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div466 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb22.jpg);
+			}
+			
+			.div466:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div42 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb44.jpg);
+			}
+			
+			.div42:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div43 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb55.jpg);
+			}
+			
+			.div43:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div44 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb66.jpg);
+			}
+			
+			.div44:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div45 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb77.jpg);
+			}
+			
+			.div45:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div46 {
+				width: 200px;
+				height: 130px;
+				background: url(img/blogs1/timthumb88.jpg);
+			}
+			
+			.div46:hover {
+				animation: d36 1s linear;
+			}
+			
+			.div47 {
+				margin-top: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 670px;
+				height: 80px;
+				background-color: white;
+			}
+			
+			.div48 {
+				width: 25px;
+				height: 23px;
+				background-color: darkturquoise;
+				text-align: center;
+				float: left;
+			}
+			
+			.div49,
+			.div50,
+			.div51,
+			.div52 {
+				width: 25px;
+				height: 23px;
+				background-color: gainsboro;
+				text-align: center;
+				margin-left: 5px;
+				float: left;
+			}
+			
+			.div53 {
+				width: 60px;
+				height: 23px;
+				background-color: gainsboro;
+				text-align: center;
+				margin-left: 5px;
+				float: left;
+			}
+			
+			.div49:hover,
+			.div50:hover,
+			.div51:hover,
+			.div52:hover,
+			.div53:hover {
+				background-color: yellowgreen;
+			}
+			
+			.div55 {
+				margin-top: 7px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 80px;
+				background-color: white;
+			}
+			
+			.div62 {
+				margin-top: 7px;
+				width: 100%;
+				height: 150px;
+				background-color: white;
+			}
+			
+			.div56 {
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat 0px 0px;
+			}
+			
+			.div57 {
+				margin-left: 5px;
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat -58px 0px;
+			}
+			
+			.div58 {
+				margin-left: 5px;
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat -116px 0px;
+			}
+			
+			.div59 {
+				margin-left: 5px;
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat -174px 0px;
+			}
+			
+			.div60 {
+				margin-left: 5px;
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat -232px 0px;
+			}
+			
+			.div61 {
+				margin-left: 5px;
+				width: 45px;
+				height: 45px;
+				background: url(img/blogs/atlas.jpg) no-repeat -290px 0px;
+			}
+			.div588{
+				height: 240px;
+				width: 200px;
+				background-color: white;
+				float: left;
+				margin-top: 55px;
+				margin-left: -75px;
+				border: 1px solid gainsboro;
+				display: none;
+			}
+			.div58:hover .div588{
+				display: block;
+			}
+			.div5888{
+				width: 200px;
+				height: 50px;
+				background-color: gainsboro;
+				font-size: 12px;
+				color: grey;
+				border-bottom:1px solid groove ;
+			}
+			.div901{
+				font-size: 10px;
+				width: 50px;
+				height: 30px;
+				background-color:cyan ;
+				margin-top: -35px;
+				margin-left: -1px;
+				text-align: center;
+				line-height:30px;
+				display: none;
+				float: left;
+			}
+			
+			.div56:hover .div901{
+				display: block;
+				color: white;
+			}
+			.div902{
+				font-size: 10px;
+				width: 50px;
+				height: 30px;
+				background-color:cyan ;
+				margin-top: -35px;
+				margin-left: -1px;
+				text-align: center;
+				line-height:30px;
+				display: none;
+				float: left;
+			}
+			
+			.div57:hover .div902{
+				display: block;
+				color: white;
+			}
+			.div904{
+				font-size: 10px;
+				width: 50px;
+				height: 30px;
+				background-color:cyan ;
+				margin-top: -35px;
+				margin-left: -1px;
+				text-align: center;
+				line-height:30px;
+				display: none;
+				float: left;
+			}
+			
+			.div59:hover .div904{
+				display: block;
+				color: white;
+			}
+			.div905{
+				font-size: 10px;
+				width: 50px;
+				height: 30px;
+				background-color:cyan ;
+				margin-top: -35px;
+				margin-left: -1px;
+				text-align: center;
+				line-height:30px;
+				display: none;
+				float: left;
+			}
+			
+			.div60:hover .div905{
+				display: block;
+				color: white;
+			}
+			.div906{
+				font-size: 10px;
+				width: 50px;
+				height: 30px;
+				background-color:cyan;
+				margin-top: -35px;
+				margin-left: -1px;
+				text-align: center;
+				line-height:30px;
+				display: none;
+				float: left;
+			}
+			
+			.div61:hover .div906{
+				display: block;
+				color: white;
+			}
+			.div56:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat 0px -49px;
+			}
+			
+			.div57:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat -58px -49px;
+			}
+			
+			.div58:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat -116px -49px;
+			}
+			
+			.div59:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat -174px -49px;
+			}
+			
+			.div60:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat -232px -49px;
+			}
+			
+			.div61:hover {
+				background: url(img/blogs/atlas.jpg) no-repeat -286px -49px;
+			}
+			
+			.div63 {
+				background-color: yellowgreen;
+			}
+			
+			.div63:active {
+				background-color: green;
+			}
+			
+			.div70 {
+				width: 43px;
+				height: 40px;
+				background-color: gainsboro;
+				float: left;
+			}
+			
+			.div71 {
+				font-size: 12px;
+				color: white;
+				border: 1ps solid gainsboro;
+				background-color: gainsboro;
+				width: 250px;
+				height: 40px;
+				margin-left: 60px;
+				float: left;
+				position: absolute;
+			}
+			
+			ul li {
+				margin-left: -38px;
+				font-size: 12px;
+				margin-top: 10px;
+				list-style-type: none;
+				height: 30px;
+				border-bottom: 1px solid gainsboro;
+			}
+			.div811{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color: cadetblue;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div81:hover .div811{
+				display: block;
+			}
+			.div81{
+				width: 45%;
+				height: 20px;
+				background-color: cornflowerblue;
+				float: left;
+				margin-left: 10px;
+				color: white;
+			}
+			.div81:hover{
+				background-color: cadetblue;
+			}
+			.div822{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color: yellowgreen;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div82:hover .div822{
+				display: block;
+			}
+			.div82{
+				width: 45%;
+				height: 20px;
+				background-color: green;
+				float: left;
+				margin-left: 10px;
+				color: white;
+			}
+			.div82:hover{
+				background-color: yellowgreen;
+			}
+			.div833{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color: crimson;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div83:hover .div833{
+				display: block;
+			}
+			.div83{
+				width: 45%;
+				height: 20px;
+				background-color: red;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div83:hover{
+				background-color: crimson;
+			}
+			.div844{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color: blueviolet;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div84:hover .div844{
+				display: block;
+			}
+			.div84{
+				width: 45%;
+				height: 20px;
+				background-color: blue;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div84:hover{
+				background-color: blueviolet;
+			}
+			.div855{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color: plum;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div85:hover .div855{
+				display: block;
+			}
+			.div85{
+				width: 45%;
+				height: 20px;
+				background-color: palevioletred;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div85:hover{
+				background-color: plum
+			}
+			.div866{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color:aqua;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div86:hover .div866{
+				display: block;
+			}
+			.div86{
+				width: 45%;
+				height: 20px;
+				background-color: aquamarine;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div86:hover{
+				background-color: aqua;
+			}
+			.div877{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color:burlywood;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div87:hover .div877{
+				display: block;
+			}
+			.div87{
+				width: 45%;
+				height: 20px;
+				background-color:brown;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div87:hover{
+				background-color: burlywood
+				}
+				.div888{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color:gold;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div88:hover .div888{
+				display: block;
+			}
+			.div88{
+				width: 45%;
+				height: 20px;
+				background-color: orange;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div88:hover{
+					background-color: gold;
+				}
+			.div899{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color:gray;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div89:hover .div899{
+				display: block;
+			}
+			.div89{
+				width: 45%;
+				height: 20px;
+				background-color: black;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+				}
+				
+			.div89:hover{
+				background-color: gray;
+			}
+			.div900{
+				font-size: 10px;
+				width: 50px;
+				height: 20px;
+				background-color:aquamarine ;
+				margin-top: -45px;
+				margin-left: 30%;
+				text-align: center;
+				line-height: 20px;
+				display: none;
+			}
+			.div90:hover .div900{
+				display: block;
+			}
+			.div90{
+				width: 45%;
+				height: 20px;
+				background-color: aqua;
+				float: left;
+				margin-left: 10px;
+				margin-top: 5px;
+				color: white;
+			}
+			.div90:hover{
+				background-color:aquamarine ;
+			}
+			
+			input::-ms-input-placeholder{
+				color: gainsboro;
+			}
+			a{
+				text-decoration: none;
+			}
+			.div91,.div92,.div93,.div94,.div95,.div96,.div97,.div98,.div99,.div100{
+				color: green;
+			}
+			.div91:hover,.div92:hover,.div93:hover,.div94:hover,.div95:hover{
+				color: red;
+			}
+			.div96:hover,.div97:hover,.div98:hover,.div99:hover,.div100:hover{
+				color: yellowgreen;
+				
+			}
+		</style>
+	</head>
+
+	<body style="background-color: gainsboro;">
+		<header id="i6">
+			<span class="font1">
+			<span class="font3">
+				<span class="font4">飞</span>
+			<span class="font4">舟</span>
+			<span class="font4">博</span>
+			<span class="font4">客</span>
+			</span>
+			<span class="font2">
+				 —— 关注Web前端发展，分享办公软件使用心得。
+			</span>
+			</span>
+		</header>
+		<div class="div0">
+			<a href="#"><div class="div2">首页</div></a>
+			<a href="zixun.html"><div class="div3">资讯</div></a>
+			<a href="web.html"><div class="div4">Web前端</div></a>
+			<a href="office.html"><div class="div5">office</div></a>
+			<a href="computer.html"><div class="div6">计算机</div></a>
+			<a href="ziyuan.html"><div class="div7">资源
+				<div class="div10">网站模板</div>
+				<div class="div11">网页插件</div>
+				<div class="div12">图片图标</div>
+				<div class="div13">软件</div>
+				<div class="div14">其他</div>
+			</div></a>
+			<a href="index.html"><div class="div8">其他
+				<div class="div15">文章存档</div>
+				<div class="div16">标签云</div>
+				<div class="div17">投稿</div>
+				<div class="div18">留言板</div>
+				<div class="div19">友情链接</div>
+			</div></a>
+			<div class="i">
+				<div class="ii">
+					<div id="i5"><i class="fa fa-search fa-1x" style="margin-top: 14px;margin-left: 10px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Search" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="div1">
+			<div class="div9">
+				<i class="fa fa-volume-up fa-1x" style="margin-left: 10px;margin-top: 13px;"></i> 飞舟博客改版，新增web前端开发知识。
+				<i class="fa fa-user fa-1x" style="margin-left: 750px;"></i>
+				<a href="#" style="text-decoration: none;"><span style="color: yellowgreen;">登录</span></a>
+			</div>
+			<div class="div20">
+				<div class="div22">
+					<div class="div23">
+						<div class="div24">
+							<a href="#i1"><img style="width: 140px;height: 70px;margin-left: 5px;margin-top: 5px;" src="img/blog/banner/timthumb.jpg" /></a>
+						</div>
+						<div class="div25">
+							<a href="#i2"><img style="width: 140px;height: 70px;margin-left: 5px;margin-top: 5px;" src="img/blog/banner/banner3.jpg" /></a>
+						</div>
+						<div class="div26">
+							<a href="#i3"><img style="width: 140px;height: 70px;margin-left: 5px;margin-top: 5px;" src="img/blog/banner/banner1.jpg" /></a>
+						</div>
+						<div class="div27">
+							<a href="#i4"><img style="width: 140px;height: 70px;margin-left: 5px;margin-top: 5px;" src="img/blog/banner/banner2.jpg" /></a>
+						</div>
+
+					</div>
+<div style="position: absolute;width: 510px;height: 340px;overflow: hidden;margin-left: 160px;">
+					<div id="i1">
+						<div class="div28"><img style="width: 510px;height: 340px;float: left; margin-left: 10px;" src="img/blogs1/tupian1.png" /></div>
+					</div>
+					<div id="i2">
+						<div class="div29"><img style="width: 510px;height: 340px;position: absolute;margin-left: -510px;" src="img/blogs1/tupian2.png" /></div>
+					</div>
+					<div id="i3">
+						<div class="div30"><img style="width: 510px;height: 340px;position: absolute;margin-left: -510px;" src="img/blogs1/tupian3.png" /></div>
+					</div>
+					<div id="i4">
+						<div class="div31"><img style="width: 510px;height: 340px;position: absolute;margin-left: -510px;" src="img/blogs1/tupian4.png" /></div>
+					</div>
+</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">Web前端</div><span class="div34">meta标签全解</span>
+						<div class="div35">
+							<div class="div36"></div>
+						</div>
+						<div class="div37">站点导航： http-equiv name 其他&lt;meta&gt;元素可提供相关页面的元信息(meta-information)，比如针对搜索引擎的页面描述和关键词。 标签位于文档的头部&lt;head&gt;内，是html语言里的一个辅助性标签，里面的内容不会显示在...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp;2年前 (2016-07-07) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;5569℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">88喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">office</div><span class="div34">PowerPoint里面无法进行中文输入，原因为何？</span>
+						<div class="div35">
+							<div class="div39"></div>
+						</div>
+						<div class="div37">微软的office系列软件很是好用，但是也伴随着很多的问题，今天就来谈谈PPT中无法输入中文的情况。 具体的症状应该是这样的： 在其它软件中（如记事本中）是可以打出中文字符的； 唯独PPT中只能输入英文，一旦切换到中文输入法时就无法打出中文； 可是却可以通过复制粘贴的方式将中文粘...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-03-18) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;2913℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">46喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">图片图标</div><span class="div34">萌妹子必备：180+超可爱的PNG素材</span>
+						<div class="div35">
+							<div class="div40"></div>
+						</div>
+						<div class="div37">超可爱，萌萌哒的PNG素材！ 重要！获取方法： 关注微信号“飞sir学府”后回复关键字“解压密码”，即可获得压缩包解压密码。 下载地址 转载请注明：飞舟博客 ? 萌妹子必备：180+超可爱的PNG素材...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp;3年前 (2016-03-02) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp; 1266℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">22喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">office</div><span class="div34">如何在PPT中设置移动鼠标出现标注文字？</span>
+						<div class="div35">
+							<div class="div466"></div>
+						</div>
+						<div class="div37">画面应该是这样的，当鼠标移动到一张图片或者文字上方时，会在特定的位置出现文字，当鼠标移开时，文字会消失，这就是一个仿网页的效果。但是在PPT中能否实现这样的效果勒？ 首先我们来理一下思路，当鼠标移动到图片上时，跳转到第二张幻灯片，而这一张幻灯片与第一张一样，只是多了个文字，这样，...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp;3年前 (2016-03-02) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;1745℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">16喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">计算机</div><span class="div34">同名文件被替换覆盖后可以恢复吗？</span>
+						<div class="div35">
+							<div class="div41"></div>
+						</div>
+						<div class="div37">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，烦躁，恨自己怎么那么手快，点击了确认覆盖。所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-02-23) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;7078℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">14喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">office</div><span class="div34">你是否经常遇到下载的PPT或者WORD打不开的情况？</span>
+						<div class="div35">
+							<div class="div42"></div>
+						</div>
+						<div class="div37">大家是否经常遇到在网上下载的PPT文档或者WORD文档无法打开的情况？在打开时，总会弹出对话框显示： Word在试图打开文件时遇到错误。 请尝试下列方法： * 检查文档或驱动器的文件权限。 * 确保有足够的内存和磁盘空间。 * 用文件恢复转换器打开文件。 &nb...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-01-22) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;1164℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">13喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">其他</div><span class="div34">500多张Win8Win10扁平化风格PPT模版</span>
+						<div class="div35">
+							<div class="div43"></div>
+						</div>
+						<div class="div37">网上收集来的500多张Win8Win10扁平化风格PPT模版，喜欢的话给个赞额！ 下载地址见文末。 下载地址 转载请注明：飞舟博客 ? 500多张Win8Win10扁平化风格PPT模版...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-01-21) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;1480℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">19喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">office</div><span class="div34">你所不知道的PPT中的快捷键！</span>
+						<div class="div35">
+							<div class="div44"></div>
+						</div>
+						<div class="div37">如果你以为这篇文章是来告诉你Ctrl+C和Ctrl+V这种全民都知道的技能那就大错特错了。其实在PPT中还有很多不为人知的快捷键，可以快速提高使用效率，今天主要从两个方面来简要说说。 制作中的快捷键 1、快速复制幻灯片或者图片文字 平时我们是怎么做的勒，是不是先复制一个，然后再粘...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-01-18) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;2571℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">14喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">图片图标</div><span class="div34">设计师必备扁平化图标！</span>
+						<div class="div35">
+							<div class="div45"></div>
+						</div>
+						<div class="div37">上万个扁平化图示图标，都是我从外网上下载下来的，现在免费分享给大家，喜欢的记得给个赞额！ 重要！获取方法： 关注微信号“飞sir学府”后回复关键字“解压密码”，即可获得压缩包解压密码。 下载地址 转载请注明：飞舟博客 ? 设计师必备扁平...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-01-12) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;1879℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">18喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div32">
+					<div style="position: absolute;margin-left: 25px;margin-top: 25px;">
+						<div class="div33" style="width: 60px;height: 25px;font-size: 12px;text-align: center;line-height: 25px;">office</div><span class="div34">PPT中的艺术字竟然还可以这样玩</span>
+						<div class="div35">
+							<div class="div46"></div>
+						</div>
+						<div class="div37">作为微软三大办公软件之一的PowerPoint，深受广大百姓的爱戴，也成为了办公室一族必备的技能。随着近几代版本的更替，功能也更加的强大。纵观中外优秀的PPT作品，我们不难发现里面的配图都很美，整个PPT很和谐。那是因为大部分的配图都是自己做的，而不是在网上胡乱的复制贴粘几张过...
+
+							<br /><br /><br /><br />
+							<div class="div38">
+								<i  class=" fa fa-user fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;faychou1989</a>&nbsp;&nbsp;<i class="fa fa-clock-o fa-1x"></i>&nbsp; 3年前 (2016-01-08) &nbsp;&nbsp;<i class="fa fa-eye fa-1x"></i>&nbsp;1763℃&nbsp;&nbsp;&nbsp;<i class="fa fa-comment fa-1x"></i>
+								<a href="#" style="text-decoration: none;color: greenyellow;">&nbsp;0评论</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o fa-1x"></i>&nbsp;<span style="color: red;">14喜欢</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="div47" style="position: absolute;">
+					<div class="div48">1</div>
+					<div class="div49">2</div>
+					<div class="div50">3</div>
+					<div class="div51">4</div>
+					<div class="div52">5</div>
+					<div class="div53">下一页</div>
+
+				</div>
+			</div>
+			<div class="div21">
+				<div class="div55">
+					<div class="div56">
+						<div class="div901">新浪微博</div>
+					</div>
+					<div class="div57">
+						<div class="div902">腾讯微博</div>
+					</div>
+					<div class="div58">
+						<div class="div588">
+							<div class="div5888">
+								<div style="margin-left: 10px;line-height: 20px;">微信扫描飞舟博客官方订阅号二维码“飞舟学府”实时获取最新文章</div>
+								<img style="widows: 170px;height:170px ;float: left;margin-top: 20px;margin-left: 15px;" src="img/blog/weixin.gif"/>
+							</div>
+						</div>
+					</div>
+					<div class="div59">
+						<div class="div904">Email</div>
+					</div>
+					<div class="div60">
+						<div class="div905">联系QQ</div>
+					</div>
+					<div class="div61">
+						<div class="div906">订阅本站</div>
+					</div>
+				</div>
+				<div class="div62" style="float: left;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">邮箱订阅</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<div style="font-size: 12px;margin-top: 10px;">填写您的邮件地址，订阅更多的精彩内容：</div>
+						<br />
+						<input type="text" placeholder="your@email.com" />
+						<div class="div63" style="width: 70px;height: 24px;float: left;margin-left: 165px;line-height:24px;margin-top:-24px;text-align: center;">订阅</div>
+					</div>
+				</div>
+				<div class="div62" style="float: left;height: 130px;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">分类目录</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+							<a style="text-decoration: none;color: green;" href="#"><span style="margin-top: 20px;">office</span><span style="margin-left: 100px;margin-top: 20px;">Web前端</span> <br /> <span style="margin-top: 20px;">其他</span> <span style="margin-left: 105px;margin-top: 20px;"> 图片图标</span><br /><span style="margin-top: 20px;">计算机</span> <span style="margin-left: 92px;margin-top: 20px;">软件</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="div62" style="float: left;height: 200px;">
+					<div style="width:80% ;height: 20px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">标签云</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+<div class="div81">office(25)
+<div class="div811">25个话题</div>
+</div>
+<div class="div82">ppt(20)
+<div class="div822">20个话题</div></div>
+<div class="div83">计算机(17)
+<div class="div833">17个话题</div></div>
+<div class="div84">资源搜索(10)
+<div class="div844">10个话题</div></div>
+<div class="div85">网络安全(9)
+<div class="div855">9个话题</div></div>
+<div class="div86">excel(6)
+<div class="div866">6个话题</div></div>
+<div class="div87">图片资源(6)
+<div class="div877">6个话题</div></div>
+<div class="div88">word(5)
+<div class="div888">5个话题</div></div>
+<div class="div89">互联网(4)
+<div class="div899">4个话题</div></div>
+<div class="div90">网络(3)
+<div class="div900">3个话题</div></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="div62" style="float: left;height: 270px;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">近期文章</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+						</div>
+					</div>
+					<ul style="margin-top: -90px;">
+						<li><span style="margin-left: 20px;"><span class="div96">meta标签全解</span></span></li>
+						<li><span style="margin-left: 20px;"><span class="div97">PowerPoint里面无法进行中文输入，原因为何？</span></span></li>
+						<li><span style="margin-left: 20px;"><span class="div98">萌妹子必备：180+超可爱的PNG素材</span></span></li>
+						<li><span style="margin-left: 20px;"><span class="div99">如何在PPT中设置移动鼠标出现标注文字？</span></span></li>
+						<li><span style="margin-left: 20px;"><span class="div100">同名文件被替换覆盖后可以恢复吗？</span></span></li>
+					</ul>
+				</div>
+				<div class="div62" style="float: left;height: 370px;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">时事热门</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+
+						</div>
+					</div>
+					<ul style="margin-top: -90px;">
+						<li style="margin-left: -25px;height: 50px;"><span style="margin-left: 20px;"><span class="div91">简单四步即可处理好PPT背景音乐和视频的冲突</span><p style="margin-left: 10px;color: gray;">2015-11-11&nbsp;&nbsp;2评论</p></span></li>
+						<li style="margin-left: -25px;height: 50px;"><span style="margin-left: 20px;"><span class="div92">如何高速有效的利用搜索引擎寻找需要的资料</span><p style="margin-left: 10px;color: gray;">2016-01-03</p></span></li>
+						<li style="margin-left: -25px;height: 50px;"><span style="margin-left: 20px;"><span class="div93">Internet Download Manager（IDM）下载器</span><p style="margin-left: 10px;color: gray;">2015-12-22</p></span></li>
+						<li style="margin-left: -25px;height: 50px;"><span style="margin-left: 20px;"><span class="div94">网页音视频下载方法之——IDM等下载器</span><p style="margin-left: 10px;color: gray;">2015-12-22</p></span></li>
+						<li style="margin-left: -25px;height: 50px;"><span style="margin-left: 20px;"><span class="div95">网页音视频下载方法之——开发人员工具</span><p style="margin-left: 10px;color: gray;">2015-12-18</p></span></li>
+					</ul>
+				</div>
+				<div class="div62" style="float: left;height: 70px;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">活跃读者</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+
+						</div>
+					</div>
+				</div>
+				<div class="div62" style="float: left;height: 115px;">
+					<div style="width:80% ;height: 130px;margin-left: 7%;">
+						<div style="margin-left: 10px;margin-top: 10px;color: #008000;">最新吐槽</div>
+						<div style="border-bottom: 1px solid #008000;margin-top: 10px;"></div>
+						<br />
+						<div style="font-size: 12px;color: green">
+							<div class="div70" style="display: flex;justify-content: center;align-items: flex-end;">
+								<i style="color: white;" class="fa fa-user-o fa-3x"></i></div>
+						</div>
+						<div class="div71">
+							<span style="color: green;">飞舟</span>3年前（2015-11-17）说:谢谢额！
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="border-bottom: 5px solid brown;margin-top: 40px;"></div>
+		<footer>
+			<span style="margin-left: 32%;">主题来源：欲思博客 · 基于WordPress构建 · 由 飞舟 后期开发与维护  备案号: 蜀ICP备16030214</span>
+		</footer>
+		<a href="#i6">
+			<div><img style="width: 40px;height: 40px;position: fixed;float: right;top: 700px;left: 1450px;" src="img/blogs/top1.jpg" /></div>
+		</a>
+	</body>
+
+</html>
